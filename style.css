@@ -847,7 +847,6 @@
             transform: translateY(-3px) scale(1.1);
         }
 
-        /* Official Social Brand Colors */
         .social-facebook { background-color: #1877f2; }
         .social-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .social-youtube { background-color: #ff0000; }
@@ -855,7 +854,6 @@
         .social-linkedin { background-color: #0a66c2; }
         .social-tiktok { background-color: #000000; }
 
-        /* Mobile Responsive Adjustments */
         @media (max-width: 768px) {
             .mobile-toggle {
                 display: block;
@@ -902,3 +900,74 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        .empresa {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.empresa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.empresa-card {
+    background: var(--bg-light, #f8f9fa);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 4px solid var(--brand-gold, #dcb242);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.empresa-card i {
+    font-size: 2.5rem;
+    color: var(--brand-blue, #0b3a75);
+    margin-bottom: 1rem;
+}
+
+.empresa-card h3 {
+    color: var(--brand-blue, #0b3a75);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.organigrama {
+    padding: 5rem 0;
+    background-color: var(--bg-light, #f8f9fa);
+}
+
+.organigrama-texto {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.organigrama-rectangulo {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px dashed var(--brand-blue, #0b3a75);
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(11, 58, 117, 0.1);
+}
+
+.organigrama-rectangulo img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain; 
+}
+
+.placeholder-texto {
+    color: #888;
+    font-size: 1.2rem;
+    text-align: center;
+}
